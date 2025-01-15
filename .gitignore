@@ -1,4 +1,5 @@
 .cache
+.dotnet
 .npm
 .bash-history
 .git-credential-cache
