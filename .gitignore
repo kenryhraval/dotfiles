@@ -1,0 +1,13 @@
+.cache
+.npm
+.bash-history
+.git-credential-cache
+.ssh
+.vscode-server
+.local
+.gem
+.lesshst
+.sudo_as_admin_successful
+.motd_shown
+.wget-hsts
+
