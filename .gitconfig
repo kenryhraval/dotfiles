@@ -1,0 +1,6 @@
+[user]
+	name = Henrijs Kravals
+	email = henrijskravals@gmail.com
+
+[alias]
+    graph = log --all --graph --decorate --oneline

@@ -1,7 +1,7 @@
 .cache
 .dotnet
 .npm
-.bash-history
+.bash_history
 .git-credential-cache
 .ssh
 .vscode-server
@@ -11,4 +11,5 @@
 .sudo_as_admin_successful
 .motd_shown
 .wget-hsts
-
+.hushlogin
+.vimgolf
