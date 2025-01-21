@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# 1) overrides already existing dotfiles in the TARGET_DIR if they are within the DOTFILES_DIR (can be backuped by uncommenting line 26) 
+# 1) overrides already existing dotfiles in the TARGET_DIR if they are within the DOTFILES_DIR 
 # 2) moves all dotfiles within the TARGET_DIR to the DOTFILES_DIR and creates symlinks within the TARGET_DIR
 
 DOTFILES_DIR=~/dotfiles
