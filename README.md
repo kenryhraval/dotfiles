@@ -1,5 +1,4 @@
 Dotfile repository
-
 ==================
 
 This repository contains a collection of dotfiles for setting up a personalized environment on a Unix-like system. It provides configurations for various tools, such as the shell, editors, and other utilities, that can be symlinked to your home directory.
