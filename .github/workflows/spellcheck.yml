@@ -1,0 +1,14 @@
+name: Spellcheck
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  check-markdown:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Run Spellcheck
+        uses: kenryhraval/spellcheck-action@v1
