@@ -11,4 +11,4 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
       - name: Run Spellcheck
-        uses: kenryhraval/spellcheck-action
+        uses: kenryhraval/spellcheck-action@main
