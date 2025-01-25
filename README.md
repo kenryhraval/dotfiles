@@ -13,7 +13,7 @@ git clone https://github.com/kenryhraval/dotfiles.git ~/dotfiles
 
 ## Setup
 
-Go to the freshly created `~/dotfiles` directory and execute the resolver that copies the existing unique dotfiles to the `dotfiles` directory and discards the ones alrady found in the `dotfiles` directory (backup by uncommenting a line in the file `resolver.sh`), after that creates symlinks in the `home` directory for all dotfiles. 
+Go to the `~/dotfiles` directory and execute the `resolver.sh` script. It will copy existing dotfiles from your home directory to the `~/dotfiles` directory. It will discard your existing dotfiles only if corresponding duplicates are found in this repository (even then, you can backup them by uncommenting a line in the `resolver.sh` script). After that it will create symlinks in the `home` directory for all dotfiles. 
 
 ```bash
 cd ~/dotfiles
