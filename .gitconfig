@@ -1,6 +1,7 @@
 [user]
 	name = Henrijs Kravals
 	email = henrijskravals@gmail.com
+	signingkey = A1CB809ACD04C6E331D7E3D101AC3D2C7B19C23D
 
 [alias]
     graph = log --all --graph --decorate --oneline
