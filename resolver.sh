@@ -19,9 +19,9 @@ for file in "$TARGET_DIR"/.*; do
     fi
 
     # ensure the file is a regular file (not a directory)
-    if [ -f "$file" ]; then
-        mv "$file" "$DOTFILES_DIR/$basefile"
-    fi
+    # if [ -f "$file" ]; then
+    mv "$file" "$DOTFILES_DIR/$basefile"
+    # fi
 done
 
 

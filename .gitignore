@@ -16,4 +16,6 @@
 .vim
 .config
 .viminfo
-
+.git-credentials
+.gnupg
+.lesshst
