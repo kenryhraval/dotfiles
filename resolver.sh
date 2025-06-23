@@ -26,26 +26,21 @@ done
 
 
 for file in "$DOTFILES_DIR"/.*; do
-
-  # we don't want symlinks for these
+  # Skip . and ..
   if [[ "$file" == "$DOTFILES_DIR/." || "$file" == "$DOTFILES_DIR/.." ]]; then
     continue
   fi
-  
+
   basefile=$(basename "$file")
-  
   target="$TARGET_DIR/$basefile"
 
-  # if the dotfile file already exists 
   if [ -e "$target" ] || [ -L "$target" ]; then
-    # you may want to backup, in which case uncomment this
-    # mv "$target" "$target.bak"
-    true	  
+    echo "Target $target exists. Backing up to $target.bak"
+    mv -f "$target" "$target.bak"
   fi
 
-  # create the symlink
   ln -s "$file" "$target"
 done
 
-echo "symlinking completed"
+echo "Symlinking completed."
 

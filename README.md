@@ -13,9 +13,15 @@ git clone https://github.com/kenryhraval/dotfiles.git ~/dotfiles
 
 ## Setup
 
-Go to the `~/dotfiles` directory and execute the `resolver.sh` script. It will copy existing dotfiles from your home directory to the `~/dotfiles` directory. It will discard your existing dotfiles if it finds corresponding duplicates in this repository (even then, you can backup them by uncommenting a line in the `resolver.sh` script). After that it will create symlinks in the `home` directory for all dotfiles. 
+Go to the `~/dotfiles` directory and execute the `resolver.sh` script. It will copy existing dotfiles from your home directory to the `~/dotfiles` directory. It will backup your existing dotfiles that collide with the new ones. After that it will create symlinks in the `home` directory for all dotfiles. 
 
 ```bash
 cd ~/dotfiles
 source resolver.sh
+```
+
+To delete the backups issue (keep in mind that it may delete your existing backups so you may want to first check the list of deletables with `find . -name ".*.bak"`):
+
+```bash
+rm -f .*.bak
 ```
